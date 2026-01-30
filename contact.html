@@ -3,23 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Generic Physio</title>
+  <title>Book Appointment | Generic Physio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>…nav…</header>
+<header>
+  <nav class="navbar">
+    <div class="logo">Generic Physio</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Book</a></li>
+    </ul>
+  </nav>
+</header>
 
 <section class="fade-in">
-  <h2>Contact Us</h2>
-  <p style="text-align:center;">
-    Email: info@Genericphysio.ca<br>
-    Phone: (000) 000-0000<br>
-    Kelowna, BC
-  </p>
+  <h2>Book an Appointment</h2>
+
+  <form
+    action="https://formspree.io/f/YOUR_FORM_ID"
+    method="POST"
+    class="booking-form"
+  >
+
+    <label>
+      Full Name
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Email
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      Phone Number
+      <input type="tel" name="phone" required>
+    </label>
+
+    <label>
+      Preferred Service
+      <select name="service" required>
+        <option value="">Select a service</option>
+        <option>Sports Injury Rehab</option>
+        <option>Post-Surgical Rehabilitation</option>
+        <option>Back & Neck Pain</option>
+        <option>Strength & Mobility Training</option>
+      </select>
+    </label>
+
+    <label>
+      Preferred Date
+      <input type="date" name="date" required>
+    </label>
+
+    <label>
+      Additional Notes
+      <textarea name="message" rows="4"></textarea>
+    </label>
+
+    <button type="submit" class="btn">Submit Booking</button>
+
+  </form>
 </section>
 
-<footer class="footer">…footer…</footer>
-<script>…JS…</script>
+<footer class="footer">
+  <div class="footer-bottom">
+    © 2026 Generic Physiotherapy — Demo Site
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+</script>
+
 </body>
 </html>
