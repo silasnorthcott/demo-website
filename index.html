@@ -11,20 +11,12 @@
 </head>
 <body>
 
-    <nav class="navbar">
-  <div class="logo">Generic Physio</div>
-
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
-
   <header>
     <nav class="navbar">
       <div class="logo">Generic Physio</div>
+
       <div class="hamburger" id="hamburger">&#9776;</div>
+
       <ul class="nav-links" id="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#services">Services</a></li>
@@ -34,102 +26,82 @@
     </nav>
   </header>
 
-  <section class="hero">
-  <div class="hero-overlay"></div>
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
 
-  <div class="hero-content">
-    <h1>Generic Physiotherapy</h1>
-    <p>Helping you move better, faster, pain-free.</p>
-    <a href="contact.html" class="btn">Book an Appointment</a>
-  </div>
-</section>
+    <div class="hero-content">
+      <h1>Generic Physiotherapy</h1>
+      <p>Helping you move better, faster, pain-free.</p>
+      <a href="contact.html" class="btn">Book an Appointment</a>
+    </div>
+  </section>
 
   <section id="services" class="services fade-in">
     <h2>Our Services</h2>
     <div class="service-list">
-      <div class="service">
-        Sports Injury Rehab
-        <a href="#contact" class="btn small-btn">Book Now</a>
-      </div>
-      <div class="service">
-        Post-Surgical Rehabilitation
-        <a href="#contact" class="btn small-btn">Book Now</a>
-      </div>
-      <div class="service">
-        Back & Neck Pain
-        <a href="#contact" class="btn small-btn">Book Now</a>
-      </div>
-      <div class="service">
-        Strength & Mobility Training
-        <a href="#contact" class="btn small-btn">Book Now</a>
-      </div>
+      <div class="service">Sports Injury Rehab <a href="#contact" class="btn small-btn">Book Now</a></div>
+      <div class="service">Post-Surgical Rehabilitation <a href="#contact" class="btn small-btn">Book Now</a></div>
+      <div class="service">Back & Neck Pain <a href="#contact" class="btn small-btn">Book Now</a></div>
+      <div class="service">Strength & Mobility Training <a href="#contact" class="btn small-btn">Book Now</a></div>
     </div>
   </section>
 
   <section class="testimonials">
-  <h2>What Our Patients Say</h2>
+    <h2>What Our Patients Say</h2>
 
-  <div class="testimonial">
-    <p>
-      “Professional, knowledgeable, and results-driven. I was back to training
-      pain-free faster than expected.”
-    </p>
-    <strong>— Demo Patient</strong>
-  </div>
+    <div class="testimonial">
+      <p>“Professional, knowledgeable, and results-driven.”</p>
+      <strong>— Demo Patient</strong>
+    </div>
 
-  <div class="testimonial">
-    <p>
-      “The team took the time to understand my goals and build a plan that worked.”
-    </p>
-    <strong>— Demo Patient</strong>
-  </div>
-</section>
+    <div class="testimonial">
+      <p>“They built a plan that actually worked.”</p>
+      <strong>— Demo Patient</strong>
+    </div>
+  </section>
 
   <section id="about" class="about fade-in">
     <h2>About the Clinic</h2>
     <p>
       Generic Physiotherapy is dedicated to evidence-based care,
-      helping active individuals return to the activities they love.
+      helping active individuals return to what they love.
     </p>
   </section>
 
   <section id="contact" class="contact fade-in">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:info@Genericphysio.ca">info@Genericphysio.ca</a></p>
-    <p>Phone: <a href="tel:5874388897">(000) 000-0000</a></p>
+    <p>Phone: (000) 000-0000</p>
     <p>Location: Kelowna, BC</p>
   </section>
 
   <footer class="footer">
-  <div class="footer-content">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Generic Physiotherapy</h3>
+        <p>Helping you move better, faster, pain-free.</p>
+      </div>
 
-    <div class="footer-section">
-      <h3>Generic Physiotherapy</h3>
-      <p>Helping you move better, faster, pain-free.</p>
+      <div class="footer-section">
+        <h4>Clinic Info</h4>
+        <p>Kelowna, BC</p>
+        <p>Mon–Fri: 8am–6pm</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Book Appointment</a>
+      </div>
     </div>
 
-    <div class="footer-section">
-      <h4>Clinic Info</h4>
-      <p>Kelowna, BC</p>
-      <p>Mon–Fri: 8am–6pm</p>
-      <p>(000) 000-0000</p>
+    <div class="footer-bottom">
+      <p>© 2026 Generic Physiotherapy. All rights reserved.</p>
+      <p class="demo-note">Demo website — content for demonstration purposes only.</p>
     </div>
-
-    <div class="footer-section">
-      <h4>Quick Links</h4>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Book Appointment</a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 Generic Physiotherapy. All rights reserved.</p>
-    <p class="demo-note">Demo website — content for demonstration purposes only.</p>
-  </div>
-</footer>
+  </footer>
 
   <script>
     const hamburger = document.getElementById('hamburger');
@@ -138,26 +110,8 @@
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('open');
     });
-
-    const faders = document.querySelectorAll('.fade-in');
-
-    const appearOptions = {
-      threshold: 0.2,
-      rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('appear');
-        appearOnScroll.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
   </script>
 
 </body>
+
 </html>
