@@ -2,88 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Appointment | Generic Physio</title>
+  <title>Contact | Generic Physiotherapy</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
   <nav class="navbar">
     <div class="logo">Generic Physio</div>
-    <div class="hamburger" id="hamburger">&#9776;</div>
-    <ul class="nav-links" id="nav-links">
+
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Book</a></li>
+      <li><a href="contact.html" class="btn-nav">Book</a></li>
     </ul>
   </nav>
-</header>
 
-<section class="fade-in">
-  <h2>Book an Appointment</h2>
+  <section class="page-header">
+    <h1>Book an Appointment</h1>
+    <p>Get in touch and start your recovery today.</p>
+  </section>
 
-  <form
-    action="https://formspree.io/f/YOUR_FORM_ID"
-    method="POST"
-    class="booking-form"
-  >
+  <section class="contact-page">
 
-    <label>
-      Full Name
-      <input type="text" name="name" required>
-    </label>
+    <div class="contact-info">
+      <h2>Clinic Information</h2>
+      <p><strong>Email:</strong> info@Genericphysio.ca</p>
+      <p><strong>Phone:</strong> (000) 000-0000</p>
+      <p><strong>Location:</strong> Kelowna, BC</p>
+      <p><strong>Hours:</strong> Mon–Fri, 8am–6pm</p>
+    </div>
 
-    <label>
-      Email
-      <input type="email" name="email" required>
-    </label>
+    <div class="contact-form">
+      <h2>Request an Appointment</h2>
 
-    <label>
-      Phone Number
-      <input type="tel" name="phone" required>
-    </label>
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Your full name">
 
-    <label>
-      Preferred Service
-      <select name="service" required>
-        <option value="">Select a service</option>
-        <option>Sports Injury Rehab</option>
-        <option>Post-Surgical Rehabilitation</option>
-        <option>Back & Neck Pain</option>
-        <option>Strength & Mobility Training</option>
-      </select>
-    </label>
+        <label>Email</label>
+        <input type="email" placeholder="Your email address">
 
-    <label>
-      Preferred Date
-      <input type="date" name="date" required>
-    </label>
+        <label>Message</label>
+        <textarea rows="5" placeholder="How can we help you?"></textarea>
 
-    <label>
-      Additional Notes
-      <textarea name="message" rows="4"></textarea>
-    </label>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
 
-    <button type="submit" class="btn">Submit Booking</button>
+  </section>
 
-  </form>
-</section>
+  <footer class="footer">
+  <div class="footer-content">
 
-<footer class="footer">
+    <div class="footer-section">
+      <h3>Generic Physiotherapy</h3>
+      <p>Helping you move better, faster, pain-free.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Clinic Info</h4>
+      <p>Kelowna, BC</p>
+      <p>Mon–Fri: 8am–6pm</p>
+      <p>(000) 000-0000</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Book Appointment</a>
+    </div>
+
+  </div>
+
   <div class="footer-bottom">
-    © 2026 Generic Physiotherapy — Demo Site
+    <p>© 2026 Generic Physiotherapy. All rights reserved.</p>
+    <p class="demo-note">Demo website — content for demonstration purposes only.</p>
   </div>
 </footer>
 
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-  });
-</script>
-
 </body>
 </html>
+
